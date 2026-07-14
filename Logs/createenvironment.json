@@ -2,11 +2,11 @@
   "eventVersion": "1.11",
   "userIdentity": {
     "type": "IAMUser",
-    "principalId": "AIDAZX6E2C2RYGGGR6PLL",
-    "arn": "arn:aws:iam::669890778787:user/vikas-singh-21",
-    "accountId": "6698*******",
-    "accessKeyId": "ASIA********",
-    "userName": "vikas-singh-21",
+    "principalId": "AID***************",
+    "arn": "arn:aws:iam::<ACCOUNT_ID>:user/restricted-user",
+    "accountId": "<ACCOUNT_ID>",
+    "accessKeyId": "ASIA****************",
+    "userName": "restricted-user",
     "sessionContext": {
       "attributes": {
         "creationDate": "2026-07-14T04:42:08Z",
@@ -18,12 +18,12 @@
   "eventSource": "cloudshell.amazonaws.com",
   "eventName": "CreateEnvironment",
   "awsRegion": "ap-south-1",
-  "sourceIPAddress": "45.112.10.8",
+  "sourceIPAddress": "x.x.x.x",
   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
   "errorCode": "AccessDenied",
   "requestParameters": null,
   "responseElements": {
-    "message": "User: arn:aws:iam::669890778787:user/vikas-singh-21 is not authorized to perform: cloudshell:CreateEnvironment on resource: * because no identity-based policy allows the cloudshell:CreateEnvironment action",
+    "message": "User: arn:aws:iam::<ACCOUNT_ID>:user/restricted-user is not authorized to perform: cloudshell:CreateEnvironment because no identity-based policy allows the cloudshell:CreateEnvironment action.",
     "code": "AccessDenied"
   },
   "requestID": "1b316cda-a560-4cab-a9a6-19a216cbe5f4",
@@ -31,7 +31,7 @@
   "readOnly": false,
   "eventType": "AwsApiCall",
   "managementEvent": true,
-  "recipientAccountId": "669890778787",
+  "recipientAccountId": "<ACCOUNT_ID>",
   "eventCategory": "Management",
   "sessionCredentialFromConsole": "true"
 }
