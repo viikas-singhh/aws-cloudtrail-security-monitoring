@@ -4,8 +4,8 @@
     "type": "IAMUser",
     "principalId": "AIDAZX6E2C2RYGGGR6PLL",
     "arn": "arn:aws:iam::669890778787:user/vikas-singh-21",
-    "accountId": "669890778787",
-    "accessKeyId": "ASIAZX6E2C2RYETP37JU",
+    "accountId": "6698*******",
+    "accessKeyId": "ASIA********",
     "userName": "vikas-singh-21",
     "sessionContext": {
       "attributes": {
