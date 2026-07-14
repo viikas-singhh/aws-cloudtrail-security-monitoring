@@ -105,55 +105,49 @@ Both actions intentionally generated **AccessDenied** events for security monito
 
 ## 1. CloudTrail Configuration
 
-CloudTrail configured as a Multi-Region Trail.
+CloudTrail configured as a Multi-Region Trail with management event logging enabled.
 
-![CloudTrail Created](<img width="1920" height="910" alt="01-cloudtrail-created" src="https://github.com/user-attachments/assets/afb4fb21-702b-439f-89f2-a1041c7a3511" />
-)
+![CloudTrail Configuration](Screenshots/01-cloudtrail-created.png)
 
 ---
 
-## 2. Unauthorized S3 Bucket Creation Attempt
+## 2. Unauthorized Amazon S3 Bucket Creation Attempt
 
-Restricted IAM user attempting to create an Amazon S3 bucket.
+A restricted IAM user attempted to create an Amazon S3 bucket without the required IAM permissions.
 
-![Attack](<img width="1920" height="909" alt="02-attack-createbucket" src="https://github.com/user-attachments/assets/93f0c856-4eb3-4654-964e-6d72e94c1719" />
-)
+![Unauthorized S3 Bucket Creation](Screenshots/02-attack-createbucket.png)
 
 ---
 
 ## 3. CloudTrail Event History
 
-CloudTrail successfully detected and recorded the unauthorized API call.
+CloudTrail successfully detected and recorded the unauthorized API calls generated during the attack simulation.
 
-![Event History](<img width="1912" height="908" alt="03-event-history" src="https://github.com/user-attachments/assets/c0b12f2b-161c-4f80-a8f8-861f5055ec1a" />
-)
-
----
-
-## 4. CreateBucket Event Investigation
-
-Detailed investigation of the CloudTrail event.
-
-![CreateBucket Details](<img width="1920" height="908" alt="05-createbucket-details" src="https://github.com/user-attachments/assets/f9aa2c2d-8945-4894-bf06-59ee15574b9f" />
-)
+![CloudTrail Event History](Screenshots/03-event-history.png)
 
 ---
 
-## 5. Unauthorized AWS CloudShell Access
+## 4. AWS CloudShell Access Denied
 
-Restricted IAM user attempting to launch AWS CloudShell.
+The restricted IAM user attempted to launch AWS CloudShell but was denied due to insufficient IAM permissions.
 
-![CloudShell Attack](<img width="1920" height="911" alt="04-cloudshell-accessdenied" src="https://github.com/user-attachments/assets/9ad6487e-3c13-438d-84e4-e06df6299d8d" />
-)
+![CloudShell Access Denied](Screenshots/04-cloudshell-accessdenied.png)
 
 ---
 
-## 6. CloudShell Event Investigation
+## 5. CreateBucket Event Investigation
 
-CloudTrail event details showing unauthorized CloudShell access.
+Detailed CloudTrail investigation showing the CreateBucket event with **AccessDenied** and associated metadata.
 
-![CloudShell Details](<img width="1920" height="909" alt="06-createenvironment-details" src="https://github.com/user-attachments/assets/4c719317-589c-4b65-94fc-c8efd1d75f65" />
-)
+![CreateBucket Event Details](Screenshots/05-createbucket-details.png)
+
+---
+
+## 6. CreateEnvironment Event Investigation
+
+Detailed CloudTrail investigation showing the CreateEnvironment event with **AccessDenied** and complete event information.
+
+![CreateEnvironment Event Details](Screenshots/06-createenvironment-details.png)
 
 ---
 
