@@ -107,7 +107,8 @@ Both actions intentionally generated **AccessDenied** events for security monito
 
 CloudTrail configured as a Multi-Region Trail.
 
-![CloudTrail Created](Screenshots/01-cloudtrail-created.png)
+![CloudTrail Created](<img width="1920" height="910" alt="01-cloudtrail-created" src="https://github.com/user-attachments/assets/afb4fb21-702b-439f-89f2-a1041c7a3511" />
+)
 
 ---
 
@@ -115,7 +116,8 @@ CloudTrail configured as a Multi-Region Trail.
 
 Restricted IAM user attempting to create an Amazon S3 bucket.
 
-![Attack](Screenshots/02-attack-createbucket.png)
+![Attack](<img width="1920" height="909" alt="02-attack-createbucket" src="https://github.com/user-attachments/assets/93f0c856-4eb3-4654-964e-6d72e94c1719" />
+)
 
 ---
 
@@ -123,7 +125,8 @@ Restricted IAM user attempting to create an Amazon S3 bucket.
 
 CloudTrail successfully detected and recorded the unauthorized API call.
 
-![Event History](Screenshots/03-event-history.png)
+![Event History](<img width="1912" height="908" alt="03-event-history" src="https://github.com/user-attachments/assets/c0b12f2b-161c-4f80-a8f8-861f5055ec1a" />
+)
 
 ---
 
@@ -131,7 +134,8 @@ CloudTrail successfully detected and recorded the unauthorized API call.
 
 Detailed investigation of the CloudTrail event.
 
-![CreateBucket Details](Screenshots/04-createbucket-details.png)
+![CreateBucket Details](<img width="1920" height="908" alt="05-createbucket-details" src="https://github.com/user-attachments/assets/f9aa2c2d-8945-4894-bf06-59ee15574b9f" />
+)
 
 ---
 
@@ -139,7 +143,8 @@ Detailed investigation of the CloudTrail event.
 
 Restricted IAM user attempting to launch AWS CloudShell.
 
-![CloudShell Attack](Screenshots/05-cloudshell-accessdenied.png)
+![CloudShell Attack](<img width="1920" height="911" alt="04-cloudshell-accessdenied" src="https://github.com/user-attachments/assets/9ad6487e-3c13-438d-84e4-e06df6299d8d" />
+)
 
 ---
 
@@ -147,7 +152,8 @@ Restricted IAM user attempting to launch AWS CloudShell.
 
 CloudTrail event details showing unauthorized CloudShell access.
 
-![CloudShell Details](Screenshots/06-createenvironment-details.png)
+![CloudShell Details](<img width="1920" height="909" alt="06-createenvironment-details" src="https://github.com/user-attachments/assets/4c719317-589c-4b65-94fc-c8efd1d75f65" />
+)
 
 ---
 
